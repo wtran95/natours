@@ -85,6 +85,7 @@ const limiter = rateLimit({
 
 app.use('/api', limiter);
 
+// Something wrong with webhook
 app.post(
   '/webhook-checkout',
   express.raw({ type: 'application/json' }),
